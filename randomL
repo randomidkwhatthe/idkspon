@@ -33,7 +33,7 @@ local Success, Response = pcall(function()
 end)
 
 if not Success then
-	warn("\nStack - Failed to load Feather Icons. Error code: " .. Response .. "\n")
+	warn("\nKruPremHub - Failed to load Feather Icons. Error code: " .. Response .. "\n")
 end	
 
 local function GetIcon(IconName)
@@ -223,7 +223,7 @@ local function LoadCfg(Config)
 				end    
 			end)
 		else
-			warn("Stack Config Loader - Could not find ", a ,b)
+			warn("KruPremHub Config Loader - Could not find ", a ,b)
 		end
 	end)
 end
@@ -469,14 +469,14 @@ function OrionLib:MakeWindow(WindowConfig)
 	local UIHidden = false
 
 	WindowConfig = WindowConfig or {}
-	WindowConfig.Name = WindowConfig.Name or "Stack"
+	WindowConfig.Name = WindowConfig.Name or "KruPremHub"
 	WindowConfig.ConfigFolder = WindowConfig.ConfigFolder or WindowConfig.Name
 	WindowConfig.SaveConfig = WindowConfig.SaveConfig or false
 	WindowConfig.HidePremium = WindowConfig.HidePremium or false
 	if WindowConfig.IntroEnabled == nil then
 		WindowConfig.IntroEnabled = true
 	end
-	WindowConfig.IntroText = WindowConfig.IntroText or "Stack"
+	WindowConfig.IntroText = WindowConfig.IntroText or "KruPremHub"
 	WindowConfig.CloseCallback = WindowConfig.CloseCallback or function() end
 	WindowConfig.ShowIcon = WindowConfig.ShowIcon or false
 	WindowConfig.Icon = WindowConfig.Icon or "rbxassetid://8834748103"
